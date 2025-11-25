@@ -37,7 +37,11 @@
   <link rel="stylesheet" href="body.css">
   <script src="policy.js" defer></script>
   <script src="form.js" defer></script>
-
+<script>
+  if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  }
+</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1321,5 +1325,6 @@ document.addEventListener("DOMContentLoaded", () => {
             width:90%;
         }
     </style>
+
 
 

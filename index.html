@@ -253,7 +253,109 @@ window.addEventListener("scroll", function() {
 </div>
 </header>
 <body> 
-   
+      <div id="malapascuapopup" class="malapascuapopup">
+  <div class="malapascuapopup-content">
+    <button type="button" class="btn cancel" id="closeMalapascua">❌</button>
+    <h2>Malapascua Diving Adventures</h2>
+    <p>Experience Malapascua’s world-famous Thresher sharks.</p>
+    <p><strong>Thresher Shark Dives Package: ₱5,199
+        <br> Discover Scuba: ₱3,000</strong></p>
+    
+    <div class="malapascuapopup-images">
+      <img src="safetyStop.JPG" alt="Dive Spot 1">
+      <img src="diveshark.jpg" alt="Dive Spot 2">
+      <img src="shark.jpg" alt="Dive Spot 3">
+    </div>
+    
+    <a href="https://malapascuadivingadventures.com" class="malapascuapopup-btn">Check Offers Now</a>
+  </div>
+</div>
+<style>
+.malapascuapopup {
+  z-index: 999;
+  display: none; 
+  position: fixed;
+  right: 0;
+  top: 10%;
+  justify-content: center; align-items: center;
+  background-image: url('ThresherMalapascua.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.malapascuapopup-content {
+     background: rgba(3, 175, 243, 0.112); 
+  backdrop-filter: blur(1px);
+  padding: 20px;
+  color:#fff;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+.malapascuapopup-content h2{
+    color:rgb(255, 117, 19);
+    font-family: cursive;
+    text-shadow: 2px 2px 5px black;
+}
+.malapascuapopup-images img {
+  width: 120px; margin: 5px;
+  height: 100px;
+}
+
+.malapascuapopup-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff9633, #b6470b);
+  color: #fff;
+  text-shadow: 2px 2px 5px black; text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    animation: pulse 1.5s infinite;
+}
+
+#closeMalapascua {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+  var malapascuapopup = document.getElementById("malapascuapopup");
+  var closeBanner = document.getElementById("closeMalapascua");
+    var popupClosed = false;
+
+  window.addEventListener("scroll", function() {
+    if (!popupClosed) {
+      setTimeout(function() {
+        if (!popupClosed) { // double check before showing
+          malapascuapopup.style.display = "flex";
+        }
+      }, 5000);
+    }
+  });
+
+ closeBanner.addEventListener("click", function() {
+    malapascuapopup.style.display = "none";
+    popupClosed = true; // mark as closed permanently
+  });
+
+  // Optional: close popup if clicking outside content
+  window.addEventListener("click", function(e) {
+    if (e.target === malapascuapopup) {
+      malapascuapopup.style.display = "none";
+      popupClosed = true; // also mark as closed
+    }
+  });
+</script>
+
   <button id="contacts" class="contacts"><p class="blinking">Contact us</p></button>
  <h1 class="title">Discover Bohol Island</h1>
 <br>
@@ -1219,4 +1321,5 @@ document.addEventListener("DOMContentLoaded", () => {
             width:90%;
         }
     </style>
+
 

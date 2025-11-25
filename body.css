@@ -287,7 +287,7 @@ html, body {
     font-size:1.2rem;
 }
 .dive{
-   max-width: 600px;
+   margin: 0;
 }
 }
 @media(max-width:829.98px){

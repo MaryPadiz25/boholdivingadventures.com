@@ -370,7 +370,7 @@ header .wrappers .checkbtn{
 }
 
 .dropdown{
-    display: inline-flex;
+    display: inline-block;
     height: auto;
     width: auto;
     position:relative;
@@ -619,7 +619,11 @@ header .checkbtn{
     border-radius: 5px;
 }
 
-
+#toggle:checked ~ .dropdown-content{
+    display: inline;
+    position: relative;
+    width: 40%;
+}
 .dropdown input[type=checkbox]:checked~.dropdown-content{
    padding: 0;
     display:inline;

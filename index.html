@@ -37,11 +37,7 @@
   <link rel="stylesheet" href="body.css">
   <script src="policy.js" defer></script>
   <script src="form.js" defer></script>
-<script>
-  if (location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
-  }
-</script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1267,6 +1263,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
             <ul class="policies">
                 <li><a href="#privacyArticle2" id="privacyPolicy">Terms and Conditions</a></li>
+                
                 <li><a href="#copyrightArticle" id="copyrightPolicy">Copyright Infringement</a></li>
             </ul>
                <p>&copy; 2024 Philippine Tourism Guide. All Rights Reserved.</p>

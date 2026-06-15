@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block crawling of form submission endpoints and modal pages
+Disallow: /thank-you.html
+
+# Sitemap location — tells ALL crawlers where to find it
+Sitemap: https://boholdivingadventures.com/sitemap.xml
+
+# Crawl delay (optional — prevents server overload)
+Crawl-delay: 2

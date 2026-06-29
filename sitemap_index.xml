@@ -13,4 +13,33 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Dive site & course guide pages -->
+  <url>
+    <loc>https://boholdivingadventures.com/balicasag-diving.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://boholdivingadventures.com/pamilacan-island-diving.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://boholdivingadventures.com/padi-open-water-bohol.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://boholdivingadventures.com/bohol-dive-sites-guide.html</loc>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

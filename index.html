@@ -64,6 +64,7 @@
        PERFORMANCE — FONT PRELOADING & PRECONNECT
        Reduces Largest Contentful Paint (LCP) significantly
   ═══════════════════════════════════════════════════════ -->
+  <link rel="preload" as="image" href="bohol.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://api.web3forms.com">
@@ -284,6 +285,9 @@
   </script>
 
   <style>
+    /* Fallback fonts sized to match webfont metrics — reduces layout shift on font swap */
+    @font-face{font-family:'Playfair Display Fallback';src:local('Georgia');size-adjust:112%;ascent-override:88%;}
+    @font-face{font-family:'Outfit Fallback';src:local('Arial');size-adjust:97%;ascent-override:95%;}
     :root {
       --ocean-deep:#03101e;--ocean-dark:#071628;--ocean-mid:#0a2540;
       --teal:#00c9b1;--teal-glow:rgba(0,201,177,0.18);--teal-dim:rgba(0,201,177,0.6);

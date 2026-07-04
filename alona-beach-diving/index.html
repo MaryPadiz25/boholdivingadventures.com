@@ -951,5 +951,5 @@ document.querySelectorAll(".reveal,.reveal-l").forEach(el=>obs.observe(el));
 const imgObs=new IntersectionObserver((entries,o)=>{entries.forEach(e=>{if(e.isIntersecting){const img=e.target;if(img.dataset.src){img.src=img.dataset.src;img.removeAttribute("data-src")}o.unobserve(img)}})});
 document.querySelectorAll("img[data-src]").forEach(img=>imgObs.observe(img));
 </script>
-</body>
+</body> 
 </html>
